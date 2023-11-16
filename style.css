@@ -4,6 +4,22 @@
     font-family:"Libre Baskerville", serif;
     box-sizing: border-box;
 }
+nav a{
+    text-decoration: none;
+    margin-top: 25px;
+    color: whitesmoke;
+    padding: 5px 30px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+nav a:hover {
+    background-color: white;
+    color:black;
+}
 .main{
     position:relative;
     width:750px;

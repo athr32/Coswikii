@@ -28,12 +28,23 @@ ul li a {
     padding: 5px 30px;
     border: 1px solid transparent;
      transition: 0.5s ease;
+    
 }
 
 ul li a:hover {
     background-color: white;
     color:black;
 }
+ul li.home a {
+    background:transparent;
+    color:whitesmoke;
+    transition: 0.5s ease;
+    background-color: rgba(175, 182, 189, 0.855);
+}
+ul li.home a:hover {
+    background-color: white;
+    color:black;}
+
 
 ul li.active a {
     background:transparent;
@@ -61,29 +72,61 @@ ul li.wait a:hover {
     float: left;
     width: 200px;
     height: auto;
-    background: transparent;
+    
+    box-shadow:10%,aqua;
+    border-radius: 7%;
 }
 
 .main {
     max-width: 1200px;
     margin: auto;
 }
+.dropdown{
+    display: none;
+    
+}
+ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: transparent;
+    color:black; 
+    margin-bottom: 15px;
+    padding: 2px;
+    text-align: center;
+}
+ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+}
+ul li:hover .dropdown ul li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background-color: transparent;
+    text-align: center;
+    background-color: rgba(175, 182, 189, 0.855);
+    color:black; 
+    
+}
+
 
 .title {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-decoration: underline;
-    color: wheat;
+    
+    color:#F29727;
 }
 
 .title h1 {
     font-size: 80px;
+    text-align: center;
 }
 
 .title h2 {
     font-size: 60px;
+    text-align: center;
 }
 
 .info {
@@ -91,13 +134,14 @@ ul li.wait a:hover {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 
 }
 
-.info h2 {
-    color: rgba(240, 251, 255, 0.715);
+.info h3 {
+    color: rgba(240, 255, 255, 0.505);
     font-size: 50px;
-    text-decoration: underline;
+    
 }
 
 .info p {
